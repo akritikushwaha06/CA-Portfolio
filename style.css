@@ -945,3 +945,158 @@ text-align:center;
 }
 
 }
+
+
+/* ===========================
+   MOBILE RESPONSIVE DESIGN
+=========================== */
+
+@media (max-width:768px){
+
+    nav{
+        flex-direction:column;
+        padding:20px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+        margin-top:15px;
+    }
+
+    nav h2{
+        font-size:32px;
+    }
+
+    /* HERO */
+
+    .hero{
+        flex-direction:column-reverse;
+        text-align:center;
+        padding:60px 25px;
+    }
+
+    .hero-image img{
+        width:240px;
+        height:240px;
+        margin-bottom:35px;
+    }
+
+    .hero-text{
+        max-width:100%;
+    }
+
+    .hero-text h1{
+        font-size:42px;
+    }
+
+    .hero-text h2{
+        font-size:24px;
+    }
+
+    .hero-text p{
+        font-size:17px;
+    }
+
+    .btn{
+        display:block;
+        width:100%;
+        margin:15px auto;
+    }
+
+    /* ABOUT */
+
+    .about{
+        flex-direction:column;
+        gap:40px;
+        padding:70px 25px;
+    }
+
+    .about-content h5{
+        font-size:28px;
+    }
+
+    .about-content h2{
+        font-size:34px;
+    }
+
+    .about-content p{
+        font-size:17px;
+    }
+
+    .about-card{
+        width:100%;
+    }
+
+    /* EXPERIENCE */
+
+    .experience{
+        padding:70px 25px;
+    }
+
+    .experience-header{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:15px;
+    }
+
+    .experience-card{
+        padding:30px;
+    }
+
+    /* SECTION TITLES */
+
+    .section-title h5{
+        font-size:24px;
+    }
+
+    .section-title h2{
+        font-size:38px;
+    }
+
+    /* EDUCATION */
+
+    .education{
+        padding:70px 25px;
+    }
+
+    .education-container{
+        grid-template-columns:1fr;
+    }
+
+    .education-card{
+        min-height:auto;
+    }
+
+    /* SKILLS */
+
+    .skills{
+        padding:70px 25px;
+    }
+
+    .skills-container{
+        grid-template-columns:1fr;
+    }
+
+    .skill-card{
+        min-height:auto;
+    }
+
+    /* CERTIFICATIONS */
+
+    .certifications{
+        padding:70px 25px;
+    }
+
+    .certification-container{
+        grid-template-columns:1fr;
+    }
+
+    /* CONTACT */
+
+    .contact{
+        padding:70px 25px;
+    }
+
+}
