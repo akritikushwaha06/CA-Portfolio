@@ -1,6 +1,6 @@
-/* =========================
-   GOOGLE FONT & RESET
-========================= */
+/* =====================================
+        GOOGLE FONT & RESET
+===================================== */
 
 *{
     margin:0;
@@ -16,13 +16,13 @@ body{
     font-family:'Poppins',sans-serif;
     background:#f8fafc;
     color:#222;
-    overflow-x:hidden;
     line-height:1.7;
+    overflow-x:hidden;
 }
 
 img{
-    max-width:100%;
     display:block;
+    max-width:100%;
 }
 
 a{
@@ -34,7 +34,7 @@ ul{
 }
 
 section{
-    padding:100px 8%;
+    padding:70px 20px;
 }
 
 .container{
@@ -44,238 +44,262 @@ section{
 }
 
 
-/* =========================
-        NAVBAR
-========================= */
+/* =====================================
+            NAVBAR
+===================================== */
 
 header{
     position:fixed;
     top:0;
     left:0;
     width:100%;
-    background:white;
-    box-shadow:0 5px 20px rgba(0,0,0,.08);
-    z-index:1000;
+    background:#fff;
+    z-index:999;
+    box-shadow:0 6px 18px rgba(0,0,0,.08);
 }
 
 nav{
-    height:80px;
     display:flex;
-    justify-content:space-between;
+    flex-direction:column;
     align-items:center;
-    padding:0 8%;
+    justify-content:center;
+    padding:18px 20px;
+    gap:18px;
 }
 
 nav h2{
-    font-size:30px;
+    font-size:2rem;
     font-weight:700;
 }
 
-nav h2 span{
+nav span{
     color:#0B6E4F;
 }
 
 nav ul{
     display:flex;
-    gap:35px;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:18px;
 }
 
 nav ul li a{
     color:#333;
     font-weight:600;
     transition:.3s;
-    position:relative;
 }
 
 nav ul li a:hover{
     color:#0B6E4F;
 }
 
-nav ul li a::after{
-    content:"";
-    position:absolute;
-    left:0;
-    bottom:-6px;
-    width:0;
-    height:2px;
-    background:#0B6E4F;
-    transition:.3s;
-}
 
-nav ul li a:hover::after{
-    width:100%;
-}
-
-
-/* =========================
-        HERO
-========================= */
+/* =====================================
+            HERO
+===================================== */
 
 .hero{
-    min-height:100vh;
+
+    padding-top:170px;
+
     display:flex;
+
+    flex-direction:column-reverse;
+
     align-items:center;
-    justify-content:space-between;
-    gap:80px;
-    padding-top:160px;
-    background:linear-gradient(135deg,#ffffff,#eef5f3);
+
+    justify-content:center;
+
+    text-align:center;
+
+    background:#eef5f3;
+
+    min-height:100vh;
+
+    gap:40px;
 }
 
 .hero-text{
-    flex:1;
+
+    width:100%;
 }
 
 .hero-text h1{
-    font-size:62px;
-    font-weight:700;
+
+    font-size:3rem;
+
+    line-height:1.2;
+
     margin-bottom:15px;
-    line-height:1.1;
 }
 
-.hero-text span{
+.hero-text h1 span{
+
     color:#0B6E4F;
 }
 
 .hero-text h2{
-    font-size:30px;
+
+    font-size:1.8rem;
+
     color:#555;
-    margin-bottom:25px;
+
+    margin-bottom:20px;
 }
 
 .hero-text p{
-    max-width:600px;
-    font-size:18px;
-    color:#555;
-    margin-bottom:40px;
+
+    font-size:1.05rem;
+
+    color:#666;
+
+    max-width:550px;
+
+    margin:auto auto 35px;
 }
 
 .hero-buttons{
-    display:flex;
-    flex-direction:column;
-    width:100%;
-    gap:18px;
-}
 
-.hero-buttons .btn{
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
     width:100%;
 }
 
 .btn{
-    background:#0B6E4F;
-    color:white;
-    padding:15px 36px;
+
+    display:block;
+
+    width:100%;
+
+    text-align:center;
+
+    padding:16px;
+
     border-radius:50px;
+
+    background:#0B6E4F;
+
+    color:#fff;
+
     font-weight:600;
+
     transition:.3s;
-    display:inline-block;
 }
 
 .btn:hover{
-    transform:translateY(-4px);
-    box-shadow:0 15px 30px rgba(11,110,79,.25);
+
+    transform:translateY(-3px);
 }
 
 .btn-outline{
+
     background:transparent;
+
     border:2px solid #0B6E4F;
+
     color:#0B6E4F;
 }
 
 .btn-outline:hover{
+
     background:#0B6E4F;
+
     color:white;
 }
 
 .hero-image{
-    flex:1;
+
+    width:100%;
+
     display:flex;
+
     justify-content:center;
 }
 
 .hero-image img{
-    width:430px;
-    height:430px;
+
+    width:240px;
+
+    height:240px;
+
     object-fit:cover;
+
     border-radius:50%;
-    border:10px solid white;
-    box-shadow:0 20px 45px rgba(0,0,0,.12);
+
+    border:8px solid white;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.12);
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* =========================
-        ABOUT
-========================= */
+/* =====================================
+            ABOUT
+===================================== */
 
 .about{
-    display:grid;
-    grid-template-columns:2fr 1fr;
-    gap:70px;
-    align-items:center;
-    background:white;
+    background:#ffffff;
+    display:flex;
+    flex-direction:column;
+    gap:40px;
+}
+
+.about-content{
+    width:100%;
 }
 
 .about-content h5{
     color:#0B6E4F;
-    font-size:16px;
-    letter-spacing:4px;
-    margin-bottom:18px;
-    text-transform:uppercase;
+    font-size:0.95rem;
+    letter-spacing:3px;
+    margin-bottom:12px;
+    font-weight:700;
 }
 
 .about-content h2{
-    font-size:48px;
+    font-size:2rem;
     line-height:1.3;
-    margin-bottom:30px;
+    margin-bottom:20px;
+    color:#222;
 }
 
 .about-content p{
-    color:#555;
-    font-size:18px;
-    line-height:1.9;
-    margin-bottom:20px;
+    color:#666;
+    font-size:1rem;
+    margin-bottom:18px;
+    line-height:1.8;
 }
 
 .about-card{
-    background:#f8fafc;
-    padding:40px;
+    width:100%;
+    background:#fff;
+    padding:30px;
     border-radius:20px;
-    box-shadow:0 15px 35px rgba(0,0,0,.08);
-    transition:.3s;
-}
-
-.about-card:hover{
-    transform:translateY(-8px);
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
 }
 
 .about-card h3{
     color:#0B6E4F;
     margin-bottom:25px;
-    font-size:24px;
+    font-size:1.4rem;
 }
 
 .info{
-    margin-bottom:22px;
+    padding:14px 0;
+    border-bottom:1px solid #eee;
+}
+
+.info:last-child{
+    border-bottom:none;
 }
 
 .info strong{
     display:block;
     margin-bottom:6px;
-    font-size:16px;
+    color:#222;
 }
 
 .info span{
@@ -283,109 +307,114 @@ nav ul li a:hover::after{
 }
 
 
-/* =========================
-     SECTION TITLE
-========================= */
+/* =====================================
+        SECTION TITLE
+===================================== */
 
 .section-title{
     text-align:center;
-    margin-bottom:70px;
+    margin-bottom:40px;
 }
 
 .section-title h5{
     color:#0B6E4F;
-    font-size:16px;
-    letter-spacing:4px;
-    margin-bottom:15px;
-    text-transform:uppercase;
+    letter-spacing:3px;
+    margin-bottom:10px;
+    font-size:.95rem;
+    font-weight:700;
 }
 
 .section-title h2{
-    font-size:46px;
+    font-size:2rem;
+    color:#222;
 }
 
 
-/* =========================
-      EXPERIENCE
-========================= */
+/* =====================================
+        EXPERIENCE
+===================================== */
 
 .experience{
-    background:#f5f7fa;
+    background:#f8fafc;
 }
 
 .experience-card{
-    max-width:900px;
-    margin:auto;
-    background:white;
-    padding:45px;
-    border-radius:22px;
-    box-shadow:0 15px 40px rgba(0,0,0,.08);
-    transition:.3s;
-}
-
-.experience-card:hover{
-    transform:translateY(-8px);
+    background:#fff;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
 }
 
 .experience-header{
     display:flex;
-    justify-content:space-between;
-    align-items:center;
+    flex-direction:column;
+    gap:12px;
     margin-bottom:20px;
 }
 
 .experience-header h3{
-    font-size:28px;
+    font-size:1.6rem;
+    color:#222;
 }
 
 .experience-header span{
+    display:inline-block;
+    width:fit-content;
     background:#0B6E4F;
     color:white;
     padding:8px 18px;
     border-radius:30px;
-    font-size:14px;
+    font-size:.85rem;
+    font-weight:600;
 }
 
 .experience-card h4{
-    margin-bottom:20px;
-    color:#555;
-    font-size:20px;
+    font-size:1.2rem;
+    color:#444;
+    margin-bottom:18px;
 }
 
 .experience-card p{
-    color:#555;
-    margin-bottom:25px;
+    color:#666;
+    margin-bottom:20px;
 }
 
 .experience-card ul{
-    padding-left:20px;
+    padding-left:18px;
+    list-style:disc;
 }
 
 .experience-card li{
-    margin-bottom:12px;
+    margin-bottom:10px;
+    color:#444;
 }
 
 
-/* =========================
-        EDUCATION
-========================= */
+
+
+
+
+
+/* =====================================
+            EDUCATION
+===================================== */
 
 .education{
-    background:white;
+    background:#ffffff;
 }
 
 .education-container{
     display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:30px;
+    grid-template-columns:1fr;
+    gap:25px;
 }
 
 .education-card{
-    background:white;
+    background:#fff;
     border-radius:20px;
-    padding:35px;
+    padding:30px;
     text-align:center;
-    box-shadow:0 12px 35px rgba(0,0,0,.08);
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
     transition:.3s;
 }
 
@@ -394,19 +423,29 @@ nav ul li a:hover::after{
 }
 
 .icon{
-    font-size:50px;
-    margin-bottom:20px;
+    width:70px;
+    height:70px;
+    margin:0 auto 20px;
+    border-radius:50%;
+    background:#0B6E4F;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-size:30px;
 }
 
 .education-card h3{
-    font-size:28px;
+    font-size:1.5rem;
     margin-bottom:15px;
+    color:#222;
 }
 
 .education-card h4{
     color:#666;
-    font-size:18px;
-    margin-bottom:18px;
+    margin-bottom:15px;
+    font-size:1rem;
+    font-weight:500;
 }
 
 .education-card p{
@@ -415,18 +454,9 @@ nav ul li a:hover::after{
 }
 
 
-
-
-
-
-
-
-
-
-
-/* =========================
-        SKILLS
-========================= */
+/* =====================================
+            SKILLS
+===================================== */
 
 .skills{
     background:#f8fafc;
@@ -434,32 +464,39 @@ nav ul li a:hover::after{
 
 .skills-container{
     display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:30px;
+    grid-template-columns:1fr;
+    gap:25px;
 }
 
 .skill-card{
     background:#fff;
-    padding:35px;
     border-radius:20px;
+    padding:30px;
+    text-align:center;
     box-shadow:0 12px 30px rgba(0,0,0,.08);
     transition:.3s;
-    text-align:center;
 }
 
 .skill-card:hover{
     transform:translateY(-8px);
-    box-shadow:0 18px 40px rgba(0,0,0,.12);
 }
 
 .skill-icon{
-    font-size:45px;
-    margin-bottom:20px;
+    width:70px;
+    height:70px;
+    margin:0 auto 20px;
+    border-radius:50%;
+    background:#0B6E4F;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-size:30px;
 }
 
 .skill-card h3{
-    font-size:24px;
     margin-bottom:15px;
+    font-size:1.4rem;
 }
 
 .skill-card p{
@@ -468,25 +505,25 @@ nav ul li a:hover::after{
 }
 
 
-/* =========================
-      CERTIFICATIONS
-========================= */
+/* =====================================
+        CERTIFICATIONS
+===================================== */
 
 .certifications{
-    background:white;
+    background:#ffffff;
 }
 
 .certification-container{
     display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:30px;
+    grid-template-columns:1fr;
+    gap:25px;
 }
 
 .certificate-card{
-    background:#f8fafc;
-    padding:35px;
-    border-radius:20px;
+    background:#fff;
+    padding:30px;
     text-align:center;
+    border-radius:20px;
     box-shadow:0 12px 30px rgba(0,0,0,.08);
     transition:.3s;
 }
@@ -496,19 +533,26 @@ nav ul li a:hover::after{
 }
 
 .certificate-icon{
-    font-size:45px;
-    margin-bottom:20px;
+    width:70px;
+    height:70px;
+    margin:0 auto 20px;
+    border-radius:50%;
+    background:#0B6E4F;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-size:30px;
 }
 
 .certificate-card h3{
-    font-size:22px;
-    margin-bottom:15px;
+    font-size:1.3rem;
+    margin-bottom:12px;
 }
 
 .certificate-card h4{
     color:#666;
-    margin-bottom:20px;
-    font-size:17px;
+    margin-bottom:18px;
 }
 
 .certificate-card span{
@@ -516,15 +560,23 @@ nav ul li a:hover::after{
     background:#0B6E4F;
     color:white;
     padding:8px 18px;
-    border-radius:30px;
-    font-size:14px;
+    border-radius:25px;
+    font-size:.9rem;
     font-weight:600;
 }
 
 
-/* =========================
-        CONTACT
-========================= */
+
+
+
+
+
+
+
+
+/* =====================================
+            CONTACT
+===================================== */
 
 .contact{
     background:#f8fafc;
@@ -532,20 +584,25 @@ nav ul li a:hover::after{
 
 .contact-container{
     display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:60px;
-    align-items:start;
+    grid-template-columns:1fr;
+    gap:40px;
+}
+
+.contact-info{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
 }
 
 .contact-info h3{
-    font-size:32px;
-    margin-bottom:20px;
+    font-size:1.8rem;
+    margin-bottom:15px;
 }
 
 .contact-info p{
     color:#666;
     margin-bottom:30px;
-    line-height:1.8;
 }
 
 .contact-item{
@@ -554,30 +611,32 @@ nav ul li a:hover::after{
 
 .contact-item strong{
     display:block;
-    margin-bottom:8px;
+    margin-bottom:5px;
     color:#0B6E4F;
 }
 
 .contact-item span{
     color:#555;
+    word-break:break-word;
 }
 
 .contact-form{
-    display:flex;
-    flex-direction:column;
-    gap:20px;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
 }
 
 .contact-form input,
 .contact-form textarea{
     width:100%;
-    padding:16px;
+    padding:15px;
+    margin-bottom:20px;
     border:1px solid #ddd;
     border-radius:12px;
-    font-family:'Poppins',sans-serif;
-    font-size:16px;
     outline:none;
-    transition:.3s;
+    font-family:Poppins,sans-serif;
+    font-size:1rem;
 }
 
 .contact-form input:focus,
@@ -586,7 +645,7 @@ nav ul li a:hover::after{
 }
 
 .contact-form textarea{
-    min-height:180px;
+    min-height:170px;
     resize:vertical;
 }
 
@@ -596,259 +655,200 @@ nav ul li a:hover::after{
 }
 
 
-/* =========================
-        FOOTER
-========================= */
+/* =====================================
+            FOOTER
+===================================== */
 
 footer{
     background:#0B6E4F;
     color:white;
     text-align:center;
-    padding:45px 20px;
+    padding:35px 20px;
 }
 
 footer h2{
     margin-bottom:10px;
-    font-size:28px;
+    font-size:1.8rem;
 }
 
 footer p{
-    margin:8px 0;
     opacity:.9;
+    margin-top:8px;
 }
 
 
+/* =====================================
+        TABLET (768px+)
+===================================== */
 
+@media (min-width:768px){
 
-
-
-
-
-
-
-
-
-
-
-
-/* ======================================
-        RESPONSIVE DESIGN
-====================================== */
-
-
-
-
-/* ---------- Mobile ---------- */
-
-@media (max-width:768px){
-
-header{
-    position:fixed;
+section{
+    padding:90px 6%;
 }
 
 nav{
-    flex-direction:column;
-    height:auto;
-    padding:20px;
-}
-
-nav h2{
-    margin-bottom:20px;
-    font-size:28px;
-}
-
-nav ul{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    width:100%;
-    gap:15px;
-}
-nav ul li a{
-    font-size:15px;
+    flex-direction:row;
+    justify-content:space-between;
 }
 
 .hero{
-    display:flex;
-    flex-direction:column-reverse;
-    align-items:center;
-    justify-content:center;
-    gap:35px;
-    width:100%;
-    overflow:hidden;
+    flex-direction:row;
+    text-align:left;
+    justify-content:space-between;
+    gap:60px;
 }
 
-.hero-text h1{
-    font-size:42px;
+.hero-text{
+    flex:1;
 }
 
-.hero-text h2{
-    font-size:24px;
-}
-
-.hero-text p{
-    font-size:16px;
+.hero-image{
+    flex:1;
 }
 
 .hero-image img{
-    width:260px;
-    height:260px;
+    width:340px;
+    height:340px;
 }
 
 .hero-buttons{
-    flex-direction:column;
+    flex-direction:row;
+    width:auto;
+}
+
+.btn{
+    width:auto;
+}
+
+.about{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:50px;
     align-items:center;
 }
 
-.btn{
-    width:220px;
-    text-align:center;
+.education-container{
+    grid-template-columns:repeat(2,1fr);
 }
 
-.section-title h2{
-    font-size:34px;
+.skills-container{
+    grid-template-columns:repeat(2,1fr);
 }
 
-.about-content h2{
-    font-size:34px;
+.certification-container{
+    grid-template-columns:repeat(2,1fr);
 }
 
-.about-content p{
-    font-size:16px;
+.contact-container{
+    grid-template-columns:1fr 1fr;
 }
 
 .experience-header{
-    flex-direction:column;
-    align-items:flex-start;
-    gap:12px;
-}
-
-.education-container,
-.skills-container,
-.certification-container{
-    grid-template-columns:1fr;
-}
-
-.education-card,
-.skill-card,
-.certificate-card{
-    padding:30px;
-}
-
-.contact-info{
-    text-align:center;
-}
-
-.contact-info h3{
-    font-size:28px;
-}
-
-.contact-form input,
-.contact-form textarea{
-    font-size:15px;
-}
-
-footer h2{
-    font-size:24px;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
 }
 
 }
 
 
-/* ---------- Small Phones ---------- */
+/* =====================================
+        DESKTOP (1024px+)
+===================================== */
 
-@media (max-width:480px){
+@media (min-width:1024px){
 
 section{
-    padding:70px 20px;
+    padding:110px 8%;
 }
 
 .hero{
-    padding-top:160px;
+    gap:100px;
 }
 
 .hero-text h1{
-    font-size:34px;
+    font-size:4rem;
 }
 
 .hero-text h2{
-    font-size:20px;
+    font-size:2rem;
 }
 
 .hero-text p{
-    font-size:15px;
+    font-size:1.1rem;
 }
 
 .hero-image img{
-    width:220px;
-    height:220px;
+    width:430px;
+    height:430px;
 }
 
 .about-content h2{
-    font-size:28px;
+    font-size:3rem;
 }
 
 .section-title h2{
-    font-size:28px;
+    font-size:3rem;
 }
 
-nav ul{
-    gap:12px;
+.education-container{
+    grid-template-columns:repeat(3,1fr);
 }
 
-nav ul li a{
-    font-size:14px;
+.skills-container{
+    grid-template-columns:repeat(3,1fr);
 }
 
-.btn{
-    width:100%;
-}
-
-.contact-form textarea{
-    min-height:140px;
+.certification-container{
+    grid-template-columns:repeat(3,1fr);
 }
 
 }
 
 
-/* ======================================
-        SMOOTH HOVER EFFECTS
-====================================== */
+/* =====================================
+            HOVER EFFECTS
+===================================== */
 
 .about-card,
 .education-card,
 .skill-card,
 .certificate-card,
-.experience-card{
-    transition:all .35s ease;
+.experience-card,
+.contact-info,
+.contact-form{
+    transition:.35s;
 }
 
 .about-card:hover,
 .education-card:hover,
 .skill-card:hover,
 .certificate-card:hover,
-.experience-card:hover{
+.experience-card:hover,
+.contact-info:hover,
+.contact-form:hover{
     transform:translateY(-8px);
 }
 
 
-/* ======================================
+/* =====================================
         CUSTOM SCROLLBAR
-====================================== */
+===================================== */
 
 ::-webkit-scrollbar{
     width:10px;
 }
 
 ::-webkit-scrollbar-track{
-    background:#f2f2f2;
+    background:#ececec;
 }
 
 ::-webkit-scrollbar-thumb{
     background:#0B6E4F;
-    border-radius:20px;
+    border-radius:30px;
 }
 
 ::-webkit-scrollbar-thumb:hover{
-    background:#08553d;
+    background:#07553d;
 }
