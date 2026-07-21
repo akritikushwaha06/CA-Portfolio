@@ -738,6 +738,10 @@ nav{
     align-items:center;
 }
 
+.p{
+    text-align: justify;
+}
+
 .experience-header{
     flex-direction:row;
     justify-content:space-between;
