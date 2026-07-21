@@ -1,6 +1,4 @@
-/* =====================================
-        GOOGLE FONT & RESET
-===================================== */
+
 
 *{
     margin:0;
@@ -44,9 +42,6 @@ section{
 }
 
 
-/* =====================================
-            NAVBAR
-===================================== */
 
 header{
     position:fixed;
@@ -65,6 +60,7 @@ nav{
     justify-content:center;
     padding:18px 20px;
     gap:18px;
+    position: relative;
 }
 
 nav h2{
@@ -94,9 +90,7 @@ nav ul li a:hover{
 }
 
 
-/* =====================================
-            HERO
-===================================== */
+
 
 .hero{
 
@@ -236,9 +230,6 @@ nav ul li a:hover{
 }
 
 
-/* =====================================
-            ABOUT
-===================================== */
 
 .about{
     background:#ffffff;
@@ -307,9 +298,7 @@ nav ul li a:hover{
 }
 
 
-/* =====================================
-        SECTION TITLE
-===================================== */
+
 
 .section-title{
     text-align:center;
@@ -330,9 +319,7 @@ nav ul li a:hover{
 }
 
 
-/* =====================================
-        EXPERIENCE
-===================================== */
+
 
 .experience{
     background:#f8fafc;
@@ -395,9 +382,7 @@ nav ul li a:hover{
 
 
 
-/* =====================================
-            EDUCATION
-===================================== */
+
 
 .education{
     background:#ffffff;
@@ -454,9 +439,7 @@ nav ul li a:hover{
 }
 
 
-/* =====================================
-            SKILLS
-===================================== */
+
 
 .skills{
     background:#f8fafc;
@@ -505,9 +488,7 @@ nav ul li a:hover{
 }
 
 
-/* =====================================
-        CERTIFICATIONS
-===================================== */
+
 
 .certifications{
     background:#ffffff;
@@ -574,9 +555,6 @@ nav ul li a:hover{
 
 
 
-/* =====================================
-            CONTACT
-===================================== */
 
 .contact{
     background:#f8fafc;
@@ -655,9 +633,6 @@ nav ul li a:hover{
 }
 
 
-/* =====================================
-            FOOTER
-===================================== */
 
 footer{
     background:#0B6E4F;
@@ -677,11 +652,47 @@ footer p{
 }
 
 
-/* =====================================
-        TABLET (768px+)
-===================================== */
 
-@media (min-width:768px){
+
+#hamburger{
+    display:none;
+    background:none;
+    border:none;
+    font-size:30px;
+    cursor:pointer;
+    color:#0B6E4F;
+}
+
+@media (max-width:768px){
+
+#hamburger{
+    display:block;
+}
+
+#nav-links{
+    display:none;
+    flex-direction:column;
+    position:absolute;
+    top:70px;
+    left:0;
+    width:100%;
+    background:white;
+    padding:20px;
+    gap:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+#nav-links.active{
+    display:flex;
+}
+
+nav{
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+}
+
+}
 
 section{
     padding:90px 6%;
@@ -691,6 +702,12 @@ nav{
     flex-direction:row;
     justify-content:space-between;
 }
+
+.hamburger { display: none; 
+ display: block; }
+.nav-links { display: none; }
+.nav-links.active { display: flex; }
+
 
 .hero{
     flex-direction:row;
@@ -753,15 +770,38 @@ nav{
 }
 
 
-/* =====================================
-        DESKTOP (1024px+)
-===================================== */
 
 @media (min-width:1024px){
 
-section{
-    padding:110px 8%;
+
+
+
+#hamburger{
+    display:none;
 }
+
+#nav-links{
+    display:flex !important;
+    position:static;
+    flex-direction:row;
+    width:auto;
+    background:none;
+    box-shadow:none;
+    padding:0;
+}
+
+
+
+    section{
+    padding:110px 8%;
+    }
+
+
+
+
+
+
+
 
 .hero{
     gap:100px;
@@ -807,9 +847,6 @@ section{
 }
 
 
-/* =====================================
-            HOVER EFFECTS
-===================================== */
 
 .about-card,
 .education-card,
@@ -832,9 +869,6 @@ section{
 }
 
 
-/* =====================================
-        CUSTOM SCROLLBAR
-===================================== */
 
 ::-webkit-scrollbar{
     width:10px;
