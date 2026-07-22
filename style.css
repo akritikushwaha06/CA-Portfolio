@@ -185,6 +185,8 @@ nav h2 span{
     font-size:1rem;
 
     margin-bottom:35px;
+
+    text-align: justify;
 }
 
 
@@ -392,6 +394,8 @@ nav h2 span{
 .experience-card p{
     color:#666;
     margin-bottom:20px;
+text-align: justify;
+
 }
 
 .experience-card ul{
@@ -495,6 +499,7 @@ nav h2 span{
 .skill-card p{
     color:#666;
     line-height:1.8;
+    text-align: justify;
 }
 
 
@@ -576,6 +581,7 @@ nav h2 span{
 .contact-info p{
     color:#666;
     margin-bottom:30px;
+    text-align: justify;
 }
 
 .contact-item{
