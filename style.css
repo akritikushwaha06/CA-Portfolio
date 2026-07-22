@@ -186,7 +186,7 @@ nav h2 span{
 
     margin-bottom:35px;
 
-    text-align: justify;
+    
 }
 
 
@@ -299,6 +299,7 @@ nav h2 span{
 .about-content p{
     color:#666;
     margin-bottom:18px;
+    text-align: justify;
 }
 
 .about-card{
@@ -394,7 +395,7 @@ nav h2 span{
 .experience-card p{
     color:#666;
     margin-bottom:20px;
-text-align: justify;
+
 
 }
 
@@ -499,7 +500,7 @@ text-align: justify;
 .skill-card p{
     color:#666;
     line-height:1.8;
-    text-align: justify;
+    
 }
 
 
